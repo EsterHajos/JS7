@@ -9,19 +9,27 @@
 <body>
 
 
-    <div class="container">
-        <h1>Type the word</h1>
-        <div id="word"></div>
-        <input type="text" id="text" placeholder="Enter word..." autofocus />
-        <div class="score-container">
-            <p>Score: <span id="score">0</span></p>
-            <p>Time: <span id="time">10</span>s</p>
-        </div>
-        <div id="end-game-container"></div>
+<div class="container">
+
+    <h1>Type a random word</h1>
+
+    <input id="text" placeholder="Enter a word..." autofocus />
+
+    <div class="score-container">
+        <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <div class="time-container">
+        <p>Time: <span id="time">10</span>s</p>
+    </div>
+
+    <h1 id="word"></h1>
+
+    <div id="end-game-container" class="end-game-container"></div>
 
 </div>
 
-    <script src="/Scripts-JS/index.js"></script>
+<script src="/Scripts-JS/index.js"></script>
 
     
 </body>
