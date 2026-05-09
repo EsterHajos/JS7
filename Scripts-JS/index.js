@@ -1,11 +1,10 @@
 //Add a random word to DOM 
-funtion addWordToDom() {
+function addWordToDom() {
   let randomIndex = Math.floor(Math.random() * words.length);
   randomWord = words[randomIndex];
   word.innerHTML = randomWord;
 }
 
-console.log(randomWord);
 
 // Score 
 function updateScore() {
@@ -34,16 +33,18 @@ console.log(time);
 function gameOver() {
   endgameEl.style.display = "flex";
   endgameEl.innerHTML = `
-    <h1>Game Over!</h1>,
-    <p>Score: ${score}</p>,
-  `;
+  <h1>Game Over!</h1>
+  <p>Score: ${score}</p>
+`;
 }
+
 
 console.log(endgameEl);
 
 addWordToDom();
 
-let Timer = setInterval(updateTime, 1000);
+let timeInterval = setInterval(updateTime, 1000);
+
 
 
 
