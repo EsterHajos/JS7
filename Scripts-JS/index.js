@@ -102,3 +102,7 @@ let score = 0;
 
 //Initializing time
 let time = 10;
+
+
+
+//I cant get it to work!! when I press enter nothing happens 
