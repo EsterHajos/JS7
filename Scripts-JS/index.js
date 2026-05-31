@@ -83,15 +83,17 @@ function gameOver() {
   endgameEl.innerHTML = `
   <h1>Game Over!</h1>
   <p>Score: ${score}</p>
+  <button onclick="location.reload()">Play Again</button>
 `;
 }
 
-
 console.log(endgameEl);
+
+// Start game
 
 addWordToDom();
 
-let timeInterval = setInterval(updateTime, 1000);
+const timeInterval = setInterval(updateTime, 1000);
 
 
 
