@@ -1,3 +1,8 @@
+console.log("JS IS RUNNING");
+
+
+
+
 // DOM elements 
 
 const wordEl = document.getElementById("word");
@@ -5,15 +10,6 @@ const textEl = document.getElementById("text");
 const scoreEl = document.getElementById("score");
 const timeEl = document.getElementById("time");
 const endgameEl = document.getElementById("end-game-container");
-
-
-
-//Behöver jag dessa?
-const settings = document.getElementById("settings");
-const settingsForm = document.getElementById("settings-form");
-const settingsBtn = document.getElementById("settings-btn");
-const difficultySelect = document.getElementById("difficulty");
-
 
 
 
@@ -51,7 +47,7 @@ let time = 10;
 function addWordToDom() {
   let randomIndex = Math.floor(Math.random() * words.length);
   randomWord = words[randomIndex];
-  word.innerText = randomWord;
+  wordEl.innerText = randomWord;
 }
 
 
@@ -61,7 +57,6 @@ function updateScore() {
   scoreEl.innerText = score;
 }
 
-console.log(score); 
 
 // Time 
 function updateTime() {
@@ -87,7 +82,6 @@ function gameOver() {
 `;
 }
 
-console.log(endgameEl);
 
 // Start game
 
@@ -98,8 +92,9 @@ const timeInterval = setInterval(updateTime, 1000);
 
 // Event listener 
 
-text.addEventListener("input", () => {
-  const (instertedText === randomWord) { 
+textEl.addEventListener("input", () => {
+  const insertedText = textEl.value.trim();
+  if (insertedText === randomWord) { 
     updateScore ();
     addWordToDom();
     time += 5;
