@@ -1,3 +1,40 @@
+// DOM elements 
+
+const wordEl = document.getElementById("word");
+const textEl = document.getElementById("text");
+const scoreEl = document.getElementById("score");
+const timeEl = document.getElementById("time");
+const endgameEl = document.getElementById("end-game-container");
+
+
+
+//Behöver jag dessa?
+const settings = document.getElementById("settings");
+const settingsForm = document.getElementById("settings-form");
+const settingsBtn = document.getElementById("settings-btn");
+const difficultySelect = document.getElementById("difficulty");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Add a random word to DOM 
 function addWordToDom() {
   let randomIndex = Math.floor(Math.random() * words.length);
@@ -60,16 +97,7 @@ text.addEventListener("input", function (e) {
 
 
 
-// Variables for the DOM elements
-const word = document.getElementById("word");
-const text = document.getElementById("text");
-const scoreEl = document.getElementById("score");
-const timeEl = document.getElementById("time");
-const endgameEl = document.getElementById("end-game-container");
-const settings = document.getElementById("settings");
-const settingsForm = document.getElementById("settings-form");
-const settingsBtn = document.getElementById("settings-btn");
-const difficultySelect = document.getElementById("difficulty");
+
 
 // Array
 const words = [
