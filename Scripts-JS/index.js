@@ -17,6 +17,33 @@ const difficultySelect = document.getElementById("difficulty");
 
 
 
+// Word arrays
+const words = [
+  "dependent",
+  "dog",
+  "superficial",
+  "admit",
+  "juice",
+  "javascript",
+  "developer",
+  "airplane",
+  "great",
+  "fun",
+  "manipulate",
+  "cat",
+  "transition",
+  "school",
+  "computer",
+  "programming",
+  "drag",
+  "loving",
+  "north",
+];
+
+// Variables 
+let randomWord;
+let score = 0;
+let time = 10;
 
 
 
@@ -99,28 +126,6 @@ text.addEventListener("input", function (e) {
 
 
 
-// Array
-const words = [
-  "dependent",
-  "dog",
-  "superficial",
-  "admit",
-  "juice",
-  "javascript",
-  "developer",
-  "airplane",
-  "great",
-  "fun",
-  "manipulate",
-  "cat",
-  "transition",
-  "school",
-  "computer",
-  "programming",
-  "drag",
-  "loving",
-  "north",
-];
 
 //Initializing word
 let randomWord;
