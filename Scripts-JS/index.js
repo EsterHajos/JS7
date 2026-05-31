@@ -41,47 +41,31 @@ const words = [
 ];
 
 // Variables 
+
 let randomWord;
 let score = 0;
 let time = 10;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Add a random word to DOM 
 function addWordToDom() {
   let randomIndex = Math.floor(Math.random() * words.length);
   randomWord = words[randomIndex];
-  word.innerHTML = randomWord;
+  word.innerText = randomWord;
 }
 
 
 // Score 
 function updateScore() {
   score++;
-
-  scoreEl.innerHTML = score;
+  scoreEl.innerText = score;
 }
 
 console.log(score); 
 
-// Time (do I have to have this?)
+// Time 
 function updateTime() {
- time = time - 1;
+ time--;
 
   timeEl.innerText = time;
 
