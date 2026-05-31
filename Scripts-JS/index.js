@@ -96,32 +96,18 @@ addWordToDom();
 const timeInterval = setInterval(updateTime, 1000);
 
 
+// Event listener 
 
-
-text.addEventListener("input", function (e) {
-  if (text.value === randomWord) {
+text.addEventListener("input", () => {
+  const (instertedText === randomWord) { 
+    updateScore ();
     addWordToDom();
-    updateScore();
-    text.value = "";
-    time = time + 3; //varför la jag 3 här? 
+    time += 5;
     timeEl.innerText = time;
+    textEl.value = "";
   }
 });
 
 
 
 
-
-
-//Initializing word
-let randomWord;
-
-//Initializing score
-let score = 0;
-
-//Initializing time
-let time = 10;
-
-
-
-//I cant get it to work!! when I press enter nothing happens 
